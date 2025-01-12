@@ -173,7 +173,7 @@ def query_model(
             elif model_str == "deepseek-v3":
                 client = OpenAI(
                     api_key=os.environ["DEEPSEEK_API_KEY"],
-                    base_url="https://api.deepseek.com/v1",
+                    base_url="https://api.deepseek.com",
                 )
                 messages = [
                     {"role": "system", "content": system_prompt},
